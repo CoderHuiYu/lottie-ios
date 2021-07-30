@@ -38,6 +38,7 @@ public extension Animation {
 
     do {
       /// Decode animation.
+        bundle
       guard let json = try bundle.getAnimationData(name, subdirectory: subdirectory) else {
         return nil
       }
